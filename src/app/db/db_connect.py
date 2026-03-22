@@ -12,7 +12,6 @@ def connect_to_db():
     password = os.environ.get("PASSWORD")
     port = os.environ.get("PORT")
     database = os.environ.get("DATABASE")
-    print(f"{host}, {user}, {password}, {port}, {database}")
 
     dbconnection = connect(
         host=host,
@@ -20,7 +19,6 @@ def connect_to_db():
         password=password,
         database=database
     )
-    print(dbconnection, "line 24"  )
- 
+
     return dbconnection
 
