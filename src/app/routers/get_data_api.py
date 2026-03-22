@@ -8,6 +8,7 @@ router = APIRouter()
 from ..db.db_connect import connect_to_db
 print("IN GET DATA API")
 dbconnection = connect_to_db()
+print("OUT OF GET DATA API")
 
 
 @router.get("/albergue", status_code=200)
