@@ -1,19 +1,12 @@
-fastapi==0.110.0
-uvicorn[standard]==0.29.0
+fastapi==0.128.0
+uvicorn[standard]==0.40.0
 
 # Database
-sqlalchemy==2.0.29
-pymysql==1.1.0
+SQLAlchemy==2.0.45
+mysql-connector-python==8.0.33
 
-# Optional (if you use MySQL connector instead)
-# mysql-connector-python==8.3.0
+# Validation
+pydantic==2.12.5
 
-# Data validation / settings
-pydantic==2.6.4
-python-dotenv==1.0.1
-
-# Async support (if using async DB later)
-# asyncmy==0.2.9
-
-# CORS / middleware (FastAPI built-in but useful to include ecosystem)
-starlette==0.36.3
+# Environment variables
+dotenv==0.9.9
