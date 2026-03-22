@@ -49,6 +49,7 @@ async def get_albergue_data():
             """)
         mycursor = dbconnection.cursor(dictionary=True)
         mycursor.execute(SQL_command)
+        print("Executed albergue query")
         data = mycursor.fetchall()
         return data
     except Exception as e:
