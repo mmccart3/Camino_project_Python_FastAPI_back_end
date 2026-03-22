@@ -3,7 +3,7 @@ uvicorn[standard]==0.40.0
 
 # Database
 SQLAlchemy==2.0.45
-mysql-connector-python==8.0.33
+mysql-connector==2.2.9
 
 # Validation
 pydantic==2.12.5
